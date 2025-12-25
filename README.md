@@ -3,9 +3,6 @@
 
 VoiceContext changes how you interact with the web. Instead of just "speech-to-text", it uses AI to understand **where you are** and **what you need**, transforming your spoken thoughts into perfectly formatted content instantly.
 
-![VoiceContext Demo](https://via.placeholder.com/800x400?text=Insert+Demo+GIF+Here+or+Screenshot) 
-*(Contextual AI generation in action)*
-
 ## 🚀 Key Features
 
 *   **🧠 Context Intelligence**: Automatically detects if you are on **Gmail**, **Twitter/X**, or **LinkedIn** and adapts the writing style.

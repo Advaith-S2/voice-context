@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceContext</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>VoiceContext</h1>
+            <button id="settings-btn" title="Settings">⚙️</button>
+        </header>
+
+        <div id="settings-panel" class="hidden">
+            <label for="api-key">Gemini API Key:</label>
+            <input type="password" id="api-key" placeholder="Enter API Key">
+            <button id="save-key">Save</button>
+        </div>
+
+        <div class="status-bar">
+            <span id="context-badge" class="badge">Detecting...</span>
+        </div>
+
+        <div class="main-content">
+            <div class="group-label">Voice Input</div>
+            <div class="input-group">
+                <textarea id="transcript" placeholder="Voice transcript will appear here..." readonly></textarea>
+            </div>
+
+            <div class="controls">
+                <button id="record-btn" class="btn primary">
+                    <span class="icon">🎙️</span> Record
+                </button>
+            </div>
+
+            <div class="group-label">
+                <span>AI Draft</span>
+                <div id="loading-indicator" class="hidden loading">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="output-group">
+                <textarea id="generated-text" placeholder="AI generated response..."></textarea>
+            </div>
+
+            <div class="actions">
+                <button id="insert-btn" class="btn secondary" disabled>Insert to Page</button>
+                <button id="copy-btn" class="btn tertiary" disabled>Copy</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="popup.js"></script>
+</body>
+
+</html>

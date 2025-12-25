@@ -40,10 +40,3 @@ VoiceContext changes how you interact with the web. Instead of just "speech-to-t
 4.  Click **Load Unpacked**.
 5.  Select the folder where you cloned this repo.
 6.  Pin the extension and add your Gemini API Key in the settings!
-
-## 🛡️ License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-*Built with ❤️ for the Hackathon*
